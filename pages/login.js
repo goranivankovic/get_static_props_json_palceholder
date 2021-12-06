@@ -18,22 +18,22 @@ class login extends Component {
     }
 }
 
-export const getServerSideProps = ({ req, res }) => {
+// export const getServerSideProps = ({ req, res }) => {
   
-  const x=  checkCookies('key', { req, res})
+//   const x=  checkCookies('key', { req, res})
 
-  if (!x) {
-    return {
-      redirect: {
-        destination: '/',
-        permanent: false,
-      },
-    }
-  }    
+//   if (!x) {
+//     return {
+//       redirect: {
+//         destination: '/',
+//         permanent: false,
+//       },
+//     }
+//   }    
 
 
-  return { props: {x}};
-}
+//   return { props: {x}};
+// }
 
 
 

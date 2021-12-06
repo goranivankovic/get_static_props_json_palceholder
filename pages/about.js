@@ -31,7 +31,7 @@ class about extends Component {
         )} */}
 
 
-
+{/* 
         <form   onSubmit={async (a)=>{
           try{
   a.preventDefault()
@@ -75,7 +75,7 @@ console.log(res);
 
         </form>
     
-
+ */}
 
 
    
@@ -88,20 +88,20 @@ console.log(res);
 
 
 
-export async function getStaticProps(context) {
-    const res = await fetch(`http://localhost:3000/api/test`)
-    const data = await res.json()
+// export async function getStaticProps(context) {
+//     const res = await fetch(`http://localhost:3000/api/test`)
+//     const data = await res.json()
   
-    if (!data) {
-      return {
-        notFound: true,
-      }
-    }
+//     if (!data) {
+//       return {
+//         notFound: true,
+//       }
+//     }
   
-    return {
-      props: { data }, // will be passed to the page component as props
-    }
-  }
+//     return {
+//       props: { data }, // will be passed to the page component as props
+//     }
+//   }
 
 
 
